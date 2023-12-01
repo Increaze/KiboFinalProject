@@ -234,14 +234,16 @@ a {
     flex-direction: column;
     margin-bottom: 0px;
   }
-  /* #myBtn,
-  #bleach,
-  #mashle,
-  #gabi,
-  #mha,
-  #saga: */
-
-
+  button {
+    background-color: #fe7f02;
+    color: white;
+    border-color: #fe7f02;
+  }
+  button:hover {
+    background-color: transparent;
+    color: #004d91;
+    border-color: #004d91;
+  }
 
   img {
     align-self: center;
