@@ -1,7 +1,7 @@
 body {
   box-sizing: border-box;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  width: 100%;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+ width: 100%;
   padding: 0;
   margin: 0%;
 }
@@ -16,6 +16,9 @@ h1 {
   width: fit-content;
   color: #fe7f02;
   font-size: 46px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+
 }
 p {
   color: #004d91;
@@ -34,7 +37,6 @@ li {
   font-size: 20px;
 }
 span {
-  font-style: italic;
   color: #004d91;
   padding-bottom: 100px;
 }
@@ -92,7 +94,8 @@ img {
   border-radius: 20px;
 }
 footer {
-  margin-top: 5em;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
   text-align: center;
   font-size: x-small;
 }
@@ -161,39 +164,35 @@ a {
 
 /* .... */
 @media only screen and (max-width: 768px) {
-  body{
+  body {
     margin: 0;
     padding: 10px;
-    /* box-sizing: border-box; */
     width: 100%;
-    font-family: "Times New Roman", Times, serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
-
   section.main {
     display: flex;
     flex-direction: column;
     background-color: white;
     align-items: center;
   }
-ul{
-  margin: 0;
-  padding: 0;
-}
+  ul {
+    margin: 0;
+    padding: 0;
+  }
   h1 {
     color: #fe7f02;
     font-size: 36px;
     text-align: center;
-    /* margin-bottom: 20px; */
+    /* margin: 15px; */
   }
   p {
     color: #004d91;
-    font-style: italic;
     font-size: 12px;
     margin-left: 0px;
   }
   span {
     color: #004d91;
-    font-style: italic;
     font-size: 12px;
   }
   li {
@@ -251,60 +250,55 @@ ul{
   }
 
   .modal,
-.modalTwo,
-.modalThree,
-.modalFour,
-.modalFive,
-.modalSix {
-  display: none; 
-  background-color: transparent;
+  .modalTwo,
+  .modalThree,
+  .modalFour,
+  .modalFive,
+  .modalSix {
+    display: none;
+    background-color: transparent;
+  }
+
+  /* Modal Content */
+  .modal-content {
+    display: none;
+  }
+
+  /* The Close Button */
+  .close,
+  .closeTwo,
+  .closeThree,
+  .closeFour,
+  .closeFive,
+  .closeSix {
+    display: none;
+    /* color: #aaaaaa; */
+    /* float: left; */
+    font-size: 28px;
+    font-weight: bold;
+  }
+  a {
+    color: red;
+  }
+
+  .close,
+  .closeTwo,
+  .closeThree,
+  .closeFour,
+  .closeFive,
+  .closeSix:hover,
+  .close,
+  .closeTwo,
+  .closeThree,
+  .closeFour,
+  .closeFive,
+  .closeSix:focus {
+    display: none;
+    /* color: #000; */
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
-
-/* Modal Content */
-.modal-content {
-  display: none;
- 
-}
-
-/* The Close Button */
-.close,
-.closeTwo,
-.closeThree,
-.closeFour,
-.closeFive,
-.closeSix {
-  display: none;
-  /* color: #aaaaaa; */
-  /* float: left; */
-  font-size: 28px;
-  font-weight: bold;
-}
-a {
-  color: red;
-}
-
-.close,
-.closeTwo,
-.closeThree,
-.closeFour,
-.closeFive,
-.closeSix:hover,
-.close,
-.closeTwo,
-.closeThree,
-.closeFour,
-.closeFive,
-.closeSix:focus {
-  display: none;
-  /* color: #000; */
-  text-decoration: none;
-  cursor: pointer;
-}
-}
-
-
-
-
 
 /* .mySlides {display: none;}
 img {vertical-align: middle;} */
